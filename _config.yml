@@ -1,0 +1,7 @@
+title: Cedric R. M. Williams
+description: Personal website and essays
+exclude:
+  - vendor/
+  - .bundle/
+  - Gemfile
+  - Gemfile.lock

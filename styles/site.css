@@ -1,0 +1,154 @@
+:root {
+  --site-max-width: 680px;
+  --body-font: "Cormorant Garamond", serif;
+  --heading-font: "Inter", sans-serif;
+  --text-color: #111111;
+  --muted-color: #4a4a4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: var(--site-max-width);
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+
+p,
+blockquote,
+figure,
+ul {
+  margin: 0 0 1.4rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+main {
+  display: block;
+}
+
+.site-nav {
+  color: var(--muted-color);
+  font-family: var(--heading-font);
+  font-size: 0.95rem;
+  letter-spacing: -0.2px;
+  margin-bottom: 2.5rem;
+}
+
+.site-nav span {
+  margin: 0 0.3rem;
+}
+
+.link-list p:last-child {
+  margin-bottom: 0;
+}
+
+.essay-index h1 {
+  font-size: clamp(2.3rem, 7vw, 3.6rem);
+  line-height: 1.05;
+  margin-bottom: 0.65rem;
+}
+
+.essay-index-intro {
+  color: var(--muted-color);
+  font-size: 1.08rem;
+  margin-bottom: 2.75rem;
+  max-width: 32rem;
+}
+
+.essay-group {
+  border-top: 1px solid #d8d3ca;
+  padding-top: 1.5rem;
+}
+
+.essay-group + .essay-group {
+  margin-top: 2rem;
+}
+
+.essay-group-header {
+  margin-bottom: 1rem;
+}
+
+.essay-group-header h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.essay-group-school {
+  color: var(--muted-color);
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.essay-group-note,
+.essay-group-link {
+  margin-bottom: 0;
+}
+
+.essay-group-link a {
+  font-family: var(--heading-font);
+  font-size: 1.05rem;
+  text-decoration-thickness: 1px;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 18px;
+    padding: 1.25rem;
+  }
+
+  .site-nav {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .essay-index-intro {
+    font-size: 1rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .essay-group {
+    padding-top: 1.25rem;
+  }
+}

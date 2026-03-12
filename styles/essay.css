@@ -1,0 +1,119 @@
+.essay-header {
+  margin-bottom: 3rem;
+}
+
+.essay-title {
+  font-size: clamp(2.25rem, 6vw, 3.35rem);
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+}
+
+.essay-author {
+  color: var(--muted-color);
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.essay-license {
+  color: var(--muted-color);
+  font-size: 1rem;
+  max-width: 34rem;
+}
+
+.essay-hero {
+  margin-bottom: 2rem;
+}
+
+.essay {
+  line-height: 1.68;
+}
+
+.essay-intro {
+  font-size: 1.16em;
+}
+
+.essay-section {
+  margin-top: 3rem;
+}
+
+.essay-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.essay-section h3 {
+  font-size: 1.05rem;
+  margin: 2rem 0 1rem;
+}
+
+.essay figure {
+  margin: 2.5rem 0;
+}
+
+.essay figure img {
+  margin: 0 auto;
+  width: auto;
+}
+
+.essay figcaption {
+  color: var(--muted-color);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.essay blockquote {
+  border-left: 1px solid #d4d4d4;
+  font-size: 0.95em;
+  margin-left: 0;
+  padding-left: 1.1rem;
+}
+
+.underlined {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.essay-bibliography {
+  margin-bottom: 4rem;
+}
+
+.essay-endmatter {
+  border-top: 1px solid #d4d4d4;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.essay-endmatter .essay-hero {
+  margin-bottom: 1.5rem;
+}
+
+.bibliography-entry {
+  margin-bottom: 1.5rem;
+}
+
+.bibliography-entry h3 {
+  font-size: 1rem;
+  margin: 0 0 0.35rem;
+}
+
+.bibliography-entry p {
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 640px) {
+  .essay-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .essay-license,
+  .essay figcaption,
+  .bibliography-entry h3 {
+    font-size: 0.95rem;
+  }
+
+  .essay figure {
+    margin: 2rem 0;
+  }
+}
