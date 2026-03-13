@@ -73,10 +73,10 @@ main {
   border-top: 1px solid #d8d3ca;
   color: var(--muted-color);
   font-family: var(--heading-font);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  margin-top: 3.5rem;
-  padding-top: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  margin-top: 5.5rem;
+  padding-top: 1.35rem;
   text-transform: uppercase;
 }
 
@@ -172,7 +172,7 @@ main {
   }
 
   .site-footer {
-    font-size: 0.78rem;
-    margin-top: 3rem;
+    font-size: 0.66rem;
+    margin-top: 4.5rem;
   }
 }
