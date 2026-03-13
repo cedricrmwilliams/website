@@ -21,7 +21,7 @@ body.cv-page {
   align-items: end;
   column-gap: 3rem;
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.9fr);
+  grid-template-columns: 1fr;
   row-gap: 1rem;
 }
 
@@ -46,13 +46,6 @@ body.cv-page {
   font-family: var(--heading-font);
   font-size: 1rem;
   margin-bottom: 0;
-}
-
-.cv-summary {
-  color: var(--muted-color);
-  font-size: 1.08rem;
-  margin-bottom: 0;
-  max-width: 28rem;
 }
 
 .cv-main-grid {
@@ -168,24 +161,26 @@ body.cv-page {
   margin-top: 1rem;
 }
 
-.cv-chip-list,
+.cv-interest-list,
 .cv-skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.cv-chip-list li {
-  background: rgba(122, 101, 71, 0.09);
-  border: 1px solid rgba(122, 101, 71, 0.14);
-  border-radius: 999px;
+.cv-interest-list {
+  column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 0.65rem;
+}
+
+.cv-interest-list li {
+  border-bottom: 1px solid #ece4d5;
   font-family: var(--heading-font);
-  font-size: 0.92rem;
-  line-height: 1.2;
-  padding: 0.55rem 0.8rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  padding-bottom: 0.55rem;
 }
 
 .cv-skill-list {
@@ -210,8 +205,8 @@ body.cv-page {
     grid-template-columns: 1fr;
   }
 
-  .cv-summary {
-    max-width: 36rem;
+  .cv-interest-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -227,16 +222,13 @@ body.cv-page {
 
   .cv-timeline-item,
   .cv-timeline-item-compact,
-  .cv-detail-row {
+  .cv-detail-row,
+  .cv-interest-list {
     grid-template-columns: 1fr;
   }
 
   .cv-year,
   .cv-detail-row dt {
     margin-bottom: 0.4rem;
-  }
-
-  .cv-chip-list li {
-    font-size: 0.88rem;
   }
 }
