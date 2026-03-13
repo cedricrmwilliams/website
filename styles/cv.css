@@ -1,0 +1,242 @@
+body.cv-page {
+  background:
+    radial-gradient(circle at top left, rgba(205, 188, 160, 0.24), transparent 30rem),
+    linear-gradient(180deg, #f6f1e7 0%, #fbf8f1 20%, #fffdf9 45%, #ffffff 100%);
+  max-width: none;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.cv-layout {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 2rem 4rem;
+}
+
+.cv-hero {
+  margin-bottom: 2rem;
+}
+
+.cv-hero-grid {
+  align-items: end;
+  column-gap: 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.9fr);
+  row-gap: 1rem;
+}
+
+.cv-kicker {
+  color: #7a6547;
+  font-family: var(--heading-font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.cv-title {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  line-height: 0.95;
+  margin-bottom: 0.4rem;
+}
+
+.cv-subtitle {
+  color: var(--muted-color);
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.cv-summary {
+  color: var(--muted-color);
+  font-size: 1.08rem;
+  margin-bottom: 0;
+  max-width: 28rem;
+}
+
+.cv-main-grid {
+  align-items: start;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 0.95fr);
+}
+
+.cv-main-column,
+.cv-side-column {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.cv-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(194, 182, 160, 0.55);
+  border-radius: 1.4rem;
+  box-shadow: 0 18px 45px rgba(66, 47, 18, 0.06);
+  padding: 1.5rem;
+}
+
+.cv-card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.cv-timeline-item {
+  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: 4.8rem minmax(0, 1fr);
+  padding-top: 1rem;
+}
+
+.cv-timeline-item + .cv-timeline-item {
+  border-top: 1px solid #e7dfd0;
+  margin-top: 1rem;
+}
+
+.cv-timeline-item-compact {
+  grid-template-columns: 4rem minmax(0, 1fr);
+}
+
+.cv-year {
+  color: #7a6547;
+  font-family: var(--heading-font);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.cv-item-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.2rem;
+}
+
+.cv-item-meta,
+.cv-detail-meta {
+  color: var(--muted-color);
+  font-family: var(--heading-font);
+  font-size: 0.94rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.15rem;
+}
+
+.cv-timeline-item p:last-child,
+.cv-detail-row p:last-child {
+  margin-bottom: 0;
+}
+
+.cv-detail-list {
+  margin: 0;
+}
+
+.cv-detail-row {
+  column-gap: 1.25rem;
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  padding-top: 1rem;
+}
+
+.cv-detail-row + .cv-detail-row {
+  border-top: 1px solid #e7dfd0;
+  margin-top: 1rem;
+}
+
+.cv-detail-row dt {
+  color: #7a6547;
+  font-family: var(--heading-font);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.cv-detail-row dd {
+  margin: 0;
+}
+
+.cv-dissertation-title {
+  font-family: var(--heading-font);
+  font-size: 1.06rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.cv-committee-member + .cv-committee-member {
+  margin-top: 1rem;
+}
+
+.cv-chip-list,
+.cv-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-chip-list li {
+  background: rgba(122, 101, 71, 0.09);
+  border: 1px solid rgba(122, 101, 71, 0.14);
+  border-radius: 999px;
+  font-family: var(--heading-font);
+  font-size: 0.92rem;
+  line-height: 1.2;
+  padding: 0.55rem 0.8rem;
+}
+
+.cv-skill-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cv-skill-list li {
+  border-top: 1px solid #e7dfd0;
+  margin: 0;
+  padding-top: 0.85rem;
+}
+
+.cv-skill-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+@media (max-width: 900px) {
+  .cv-hero-grid,
+  .cv-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-summary {
+    max-width: 36rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .cv-layout {
+    padding: 1.25rem 1.25rem 3rem;
+  }
+
+  .cv-card {
+    border-radius: 1.1rem;
+    padding: 1.15rem;
+  }
+
+  .cv-timeline-item,
+  .cv-timeline-item-compact,
+  .cv-detail-row {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-year,
+  .cv-detail-row dt {
+    margin-bottom: 0.4rem;
+  }
+
+  .cv-chip-list li {
+    font-size: 0.88rem;
+  }
+}
